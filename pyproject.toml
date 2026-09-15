@@ -1,0 +1,26 @@
+[project]
+name = "cross-asset-factor-engine"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Quaro", email = "135996757+quaronilorenzo@users.noreply.github.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "jupyterlab>=4.6.3",
+    "matplotlib>=3.11.2",
+    "pandas>=3.0.5",
+]
+
+[project.scripts]
+cross-asset-factor-engine = "cross_asset_factor_engine:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "nbstripout>=0.9.1",
+]
